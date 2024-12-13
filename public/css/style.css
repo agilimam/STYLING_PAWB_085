@@ -1,0 +1,208 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #aeeaf6;
+    color: #343a40;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Todo List - Grid Layout */
+#todoList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 kolom dengan lebar sama */
+    gap: 20px;
+    /* Spasi antar elemen */
+    margin-top: 20px;
+}
+
+/* Todo Card Styles */
+.todo-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Menempatkan elemen secara horizontal di tengah */
+    justify-content: center;
+    /* Menempatkan elemen secara vertikal di tengah */
+    margin: 10px;
+    text-align: center;
+    /* Mengatur agar teks berada di tengah */
+
+}
+
+.todo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 kolom dengan lebar sama */
+    gap: 20px;
+    /* Spasi antar elemen */
+}
+
+.todo-card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar styling */
+.navbar {
+    border-bottom: 1px solid #5395d7;
+    box-shadow: 0 2px 4px rgba(9, 255, 0, 0.1);
+    position: fixed;
+    /* Menjaga navbar tetap di posisi atas */
+    top: 0;
+    /* Menempel di bagian atas */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Agar navbar berada di atas konten lainnya */
+    background-color: #ffffff;
+    /* Memberikan latar belakang agar navbar tetap terbaca */
+    padding: 10px 0;
+    /* Memberikan padding agar navbar tidak terlalu rapat */
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-link {
+    color: #343a40;
+    margin-right: 15px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+
+.logout-icon {
+    margin-right: 5px;
+}
+
+/* Header section */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(41, 41, 107, 0.1);
+    margin-bottom: auto;
+    margin-top: 80px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Footer section */
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Login Page Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    background-color: #f8f9fa;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box .logo img {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.login-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.login-box .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-box .input-group label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #6c757d;
+}
+
+.login-box .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.login-box .footerlogin {
+    margin-top: 20px;
+}
+
+.login-box .footerlogin p {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.login-box .footerlogin a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-box .footerlogin a:hover {
+    text-decoration: underline;
+}
+
+.login-box .btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-box .btn:hover {
+    background-color: #0056b3;
+}
